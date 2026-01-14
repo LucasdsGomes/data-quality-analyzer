@@ -1,7 +1,6 @@
 import pandas as pd
 
 def dataset_overview(df):
-    """Retorna uma visão geral do dataset."""
     overview = {
         "Número de linhas": df.shape[0],
         "Número de colunas": df.shape[1],
