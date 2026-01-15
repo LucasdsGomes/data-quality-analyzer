@@ -3,7 +3,7 @@ import pandas as pd
 from metrics import dataset_overview
 from metrics import quality_score
 import json
-from report import generate_dataset_report
+from report import generate_dataset_report, generate_pdf_report
 
 st.set_page_config(page_title="EDA Dashboard", layout="wide")
 
@@ -42,9 +42,23 @@ if uploaded_file:
     report = generate_dataset_report(df)
     report_json = json.dumps(report, indent=4, ensure_ascii=False)
 
+    report = generate_dataset_report(df)
+    report_json = json.dumps(report, indent=4, ensure_ascii=False)
+
+    # JSON
     st.download_button(
-        label="Baixar Relatório JSON",
+        label="📥 Baixar Relatório JSON",
         data=report_json,
         file_name="relatorio_dataset.json",
         mime="application/json"
+    )
+
+    # PDF
+    pdf_buffer = generate_pdf_report(report)
+
+    st.download_button(
+        label="📄 Baixar Relatório PDF",
+        data=pdf_buffer,
+        file_name="relatorio_dataset.pdf",
+        mime="application/pdf"
     )
