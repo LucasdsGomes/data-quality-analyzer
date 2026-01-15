@@ -2,7 +2,7 @@
 
 Aplicação interativa desenvolvida em **Python + Streamlit** para análise de qualidade de dados em arquivos CSV, com métricas automáticas, score de qualidade e exportação de relatórios.
 
-🔗 **Aplicação online:** *(adicione aqui o link do Streamlit Cloud quando publicar)*
+🔗 **Aplicação online:** https://data-quality-analyzer.streamlit.app
 
 ---
 
@@ -47,20 +47,6 @@ O score inicia em **100 pontos** e sofre penalizações com base em:
 
 ---
 
-## 📂 Estrutura do projeto
-analyst-dashboard/
-│
-├── src/
-│ ├── app.py # Aplicação Streamlit
-│ ├── metrics.py # Métricas e quality score
-│ ├── report.py # Geração de relatórios
-│ └── init.py
-│
-├── requirements.txt
-└── README.md
-
----
-
 ## ▶️ Como executar localmente
 
 ### 1️⃣ Clone o repositório
@@ -72,7 +58,9 @@ cd analyst-dashboard
 ```
 
 ## 2️⃣ Crie e ative o ambiente virtual
+```
 python -m venv .venv
+```
 
 ### Windows
 ```
@@ -111,6 +99,7 @@ streamlit run src/app.py
 ## 👨‍💻 Autor
 
 Lucas Gomes
-Desenvolvedor focado em Back-end, automação e análise de dados.
-[LinkedIn: https://www.linkedin.com/in/lucasdsgomes/](https://www.linkedin.com/in/lucasdsgomes/)
+
+- Desenvolvedor focado em Back-end, automação e análise de dados.
+[LinkedIn](https://www.linkedin.com/in/lucasdsgomes/)
 
