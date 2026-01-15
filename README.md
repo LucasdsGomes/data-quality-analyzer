@@ -16,7 +16,7 @@ Aplicação interativa desenvolvida em **Python + Streamlit** para análise de q
 - 🚨 Detecção de outliers (IQR)  
 - 🧠 **Quality Score** do dataset (0–100)  
 - 📦 Visualização com boxplot  
-- 📤 Exportação de relatório em JSON  
+- 📤 Exportação de relatório em JSON e PDF
 - 🔤 Suporte a colunas numéricas e categóricas  
 
 ---
